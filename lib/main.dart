@@ -118,7 +118,7 @@ class _DebtHomeState extends State<DebtHome> {
                 ),
                 const SizedBox(height: 12),
                 DropdownButtonFormField<String>(
-                  value: type,
+                  initialValue: type,
                   decoration: const InputDecoration(labelText: 'Тип долга'),
                   items: ['Мне должны', 'Я должен']
                       .map((v) => DropdownMenuItem(
@@ -131,7 +131,7 @@ class _DebtHomeState extends State<DebtHome> {
                   },
                 ),
                 DropdownButtonFormField<String>(
-                  value: currency,
+                  initialValue: currency,
                   decoration: const InputDecoration(labelText: 'Валюта'),
                   items: currencies
                       .map((v) => DropdownMenuItem(
